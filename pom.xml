@@ -19,6 +19,7 @@
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -66,7 +67,7 @@
   <build>
     <finalName>springmvc-scala</finalName>
     <!-- maven支持Scala和编译的插件 -->
-    <plugins>
+    <!--<plugins>
       <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
@@ -88,12 +89,12 @@
               <goal>testCompile</goal>
             </goals>
           </execution>
-        </executions>
+        </executions>-->
         <!-- 指定scala版本 -->
-        <configuration>
+        <!--<configuration>
           <scalaVersion>2.11.8</scalaVersion>
         </configuration>
       </plugin>
-    </plugins>
+    </plugins> -->
   </build>
 </project>
