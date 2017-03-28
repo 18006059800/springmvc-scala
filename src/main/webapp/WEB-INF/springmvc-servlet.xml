@@ -11,9 +11,10 @@
 		http://www.springframework.org/schema/mvc
 		http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <import resource="spring-mybatis.xml"/>
     <!--自动注入、扫描-->
     <mvc:annotation-driven/>
-    <context:component-scan base-package="Controller"/>
+    <context:component-scan base-package="com.myapp"/>
 
     <!-- Thymeleaf模版渲染 -->
     <bean id="templateResolver"

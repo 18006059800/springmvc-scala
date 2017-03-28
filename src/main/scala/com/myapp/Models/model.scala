@@ -1,4 +1,4 @@
-package Models
+package com.myapp.Models
 
 /**
   * Created by jackywong on 24/03/2017.

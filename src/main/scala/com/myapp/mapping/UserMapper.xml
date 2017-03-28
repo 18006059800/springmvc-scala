@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.myapp.Dao.UserDao">
+    <resultMap id="BaseResultMap" type="com.myapp.Models.User">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="id_key" property="id_key" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+    </resultMap>
+    <!--
+        <sql id="Base_Column_List">
+            id,id_key,name
+        </sql>
+
+        <select id="selectId" resultMap="BaseResultMap" parameterType="long">
+            select * from User where id = #{id}
+        </select>
+
+        <insert id="insert" parameterType="com.myapp.Models.User">
+            insert into User (id,id_key,name) values(#{id},#{id_key},#{name})
+        </insert>
+
+        <update id="updateId" parameterType="com.myapp.Models.User">
+            update User set id_key=#{id_key},name=#{name} where id = #{id}
+        </update>
+
+        <delete id="deleteId" parameterType="long">
+            delete from User where id = #{id}
+        </delete>
+    -->
+</mapper>
